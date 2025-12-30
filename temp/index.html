@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        display: flex;
+        flex-direction: row;
+        overflow-wrap: normal;
+        gap: 10px;
+        padding: 10px;
+        height: 210px;
+        .child {
+          display: inline-block;
+          height: 200px;
+          width: 200px;
+          border: 2px solid black;
+          border-radius: 5px;
+          img {
+            height: 200px;
+            width: 190px;
+          }
+        }
+      }
+      .temp {
+        display: flex;
+      }
+
+      @keyframes moveleft {
+        0% {
+          transform: translateX(0px);
+        }
+        100% {
+          transform: translateX(-1040px);
+        }
+      }
+      @keyframes moveright {
+        0% {
+          transform: translateX(-1040px);
+        }
+        100% {
+          transform: translateX(0px);
+        }
+      }
+      #btn1,
+      #btn2 {
+        z-index: 1000;
+      }
+      #btn2 {
+        margin-top: 0px;
+        margin-right: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="temp">
+      <button id="btn1">[</button>
+      <div class="main">
+        <div class="one child"><img src="../public/NetflixImg/one.webp" /></div>
+        <div class="two child"><img src="../public/NetflixImg/two.webp" /></div>
+        <div class="three child">
+          <img src="../public/NetflixImg/three.webp" />
+        </div>
+        <div class="four child">
+          <img src="../public/NetflixImg/four.webp" />
+        </div>
+        <div class="five child">
+          <img src="../public/NetflixImg/five.webp" />
+        </div>
+        <div class="six child"><img src="../public/NetflixImg/six.webp" /></div>
+        <div class="seven child">
+          <img src="../public/NetflixImg/seven.webp" />
+        </div>
+        <div class="eight child">
+          <img src="../public/NetflixImg/eight.webp" />
+        </div>
+        <div class="nine child">
+          <img src="../public/NetflixImg/nine.webp" />
+        </div>
+        <div class="ten child"><img src="../public/NetflixImg/ten.webp" /></div>
+      </div>
+    </div>
+    <button id="btn2">]</button>
+    <script>
+      document.getElementById("btn1").addEventListener("click", () => {
+        const mainDiv = document.querySelector(".main");
+        mainDiv.style.animation = "moveleft 0.5s forwards";
+      });
+      document.getElementById("btn2").addEventListener("click", () => {
+        const mainDiv = document.querySelector(".main");
+        mainDiv.style.animation = "moveright 0.5s forwards";
+      });
+    </script>
+  </body>
+</html>

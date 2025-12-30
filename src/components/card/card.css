@@ -1,0 +1,11 @@
+.card{
+   
+  background: linear-gradient(135deg, #1e3c72, #5b145f);
+ 
+}
+.icon-b{
+ 
+   display: flex;
+   justify-content: end;
+ 
+}

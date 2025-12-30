@@ -1,0 +1,14 @@
+ 
+ /* body{
+
+    background-image: url("../public/NetflixImg/netflix_bg.jpg") ;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+   
+    
+ } */
+ button,img{
+   &:hover{
+      cursor: pointer;
+   }
+ }

@@ -1,0 +1,12 @@
+.shade{
+    background: none;
+    background-color: rgba(0, 0,0 ,0.6);
+    margin: none;
+    border-radius: 5px;
+ 
+}
+.cover{
+     background-image: url("../public/NetflixImg/netflix_bg.jpg") ;
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+}

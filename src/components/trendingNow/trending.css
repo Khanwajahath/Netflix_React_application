@@ -1,0 +1,46 @@
+.trendingnow{
+    color: #fff;
+    background: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+     overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    width:900px;
+     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  
+    .image_container{
+    transition: transform 0.5s ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 30px;
+    overflow: none;
+    margin: 15px;
+    justify-content: center;
+    img{
+        border-radius: 5px;
+        width: 150px;
+        height: 100%;
+        &:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+    }
+
+}
+}
+ 
+.main{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+}
+ 
+.rightbtn,.leftbtn{
+    height: 100px;
+    background-color: black;
+}

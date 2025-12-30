@@ -1,0 +1,16 @@
+ .acc-div{
+    color: white;
+    background: rgb(44, 43, 43);
+    outline: none;
+    box-shadow: none;
+    
+ }
+ .acc-h{
+    outline: none;
+    box-shadow: none;
+    color: white;
+    background: rgb(44, 43, 43);
+ }
+ .accordion-button:focus {
+  box-shadow: none;
+}
