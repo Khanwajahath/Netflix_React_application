@@ -1,5 +1,5 @@
 import "./header.css";
-import netflix from "../../../public/NetflixImg/netflix_Logo.png";
+import netflix from "../../../public/NetflixImg/Netflix_Logo.png";
 
 export default function Header() {
   return (
